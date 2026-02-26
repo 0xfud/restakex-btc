@@ -1,1 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ReStakeX BTC</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f1a;
+      color: white;
+    }
 
+    header {
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #111827;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .btn {
+      background: #f7931a;
+      border: none;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+    }
+
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 40px;
+    }
+
+    .card {
+      background: #111827;
+      padding: 30px;
+      border-radius: 12px;
+      min-width: 200px;
+      text-align: center;
+    }
+
+    .dashboard {
+      max-width: 600px;
+      margin: 60px auto;
+      background: #111827;
+      padding: 40px;
+      border-radius: 12px;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 6px;
+      border: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">ReStakeX BTC</div>
+  <button class="btn" onclick="connectWallet()">Connect Wallet</button>
+</header>
+
+<section class="hero">
+  <h1>Bitcoin Native Restaking</h1>
+  <p>Secure decentralized services with your BTC and earn layered yield on OPNet.</p>
+</section>
+
+<section class="stats">
+  <div class="card">
+    <h3>Total Value Locked</h3>
+    <p>$42,580,000</p>
+  </div>
+  <div class="card">
+    <h3>Total Restaked BTC</h3>
+    <p>1,245 BTC</p>
+  </div>
+  <div class="card">
+    <h3>APY</h3>
+    <p>8.4%</p>
+  </div>
+</section>
+
+<section class="dashboard">
+  <h2>Restake Dashboard</h2>
+  <p>Your Balance: 2.15 BTC</p>
+  <p>Pending Rewards: 0.041 BTC</p>
+
+  <label>Amount to Restake</label>
+  <input type="number" placeholder="Enter BTC amount" />
+
+  <br><br>
+  <button class="btn">Restake BTC</button>
+</section>
+
+<footer>
+  Built on OPNet • ReStakeX BTC Protocol • 2026
+</footer>
+
+<script>
+  function connectWallet() {
+    alert("Wallet connected (simulation)");
+  }
+</script>
+
+</body>
+</html>
